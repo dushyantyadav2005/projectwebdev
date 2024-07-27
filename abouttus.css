@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    color: aliceblue;
+    box-sizing: border-box;
+    font-family: 'FAMILY_NAME';
+}
+.tool_bar {
+  background-color: #042345;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 1.8vh;
+}
+.icon{
+  width: 5vw;
+  height: 5vh;
+  display: flex;
+  align-items: center;
+  font-size: large;
+  text-decoration: solid;
+  color: white;
+}
+.icon:hover {
+  font-size: xx-large;
+  text-transform: capitalize;   
+  text-decoration: underline;
+}
+.icon_img{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.home button{
+    background-color: #1c0336;
+    color: white;
+    padding: 1rem;
+    font-size: 1rem;
+    border: none;
+  }
+  .home:hover .hobutton{ background-color: #01040d;
+  font-size: 1.25rem;}
+  .aboutus{
+    display: flex;
+    flex-direction: column;
+  }
+  .member{
+    height: 300px;
+    background-color: #57585b;
+    overflow: hidden;
+    width: 500px;
+    margin: 100px auto;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    border-radius: 20%;
+    
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  }
+  .text_about{
+    display: flex;
+    
+    flex-direction: column;
+    gap: 20px;
+  }
+  .data{
+    padding-top: 60px;
+    padding-left: 50px;
+        display: flex;
+       
+    padding: auto auto; display: flex;
+    gap: 20px;
+    flex-direction: row;
+  }
+  .mem{
+    height: 200px;
+    width: 200px;
+    
+    border-radius: 10%;
+  }
+  .name{
+    font-size: 32px;
+    
+  }
+  .des{
+    font-size: 20px;
+  }
+  .opti_follow{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    
+  }
+  /* .email{
+    
+  }
+  .mob{
+    
+  } */
+  .footer{
+    background-color: #01040d;
+    color: white;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    padding: 100px 100px;
+    gap: 20px;
+  }
+  .left_footer{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 500px;
+  }
+  .heading_text{
+    font-size: 3rem;
+  }
+  .text{
+    color: rgb(80, 80, 92);
+  }
+  .right_footer{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  .feedback{
+    font-size: 32px;
+  }
+  .option_follow{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+  .avl_mess{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  
