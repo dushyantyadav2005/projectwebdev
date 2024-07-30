@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    /* color: aliceblue; */
+    box-sizing: border-box;
+    font-family: 'FAMILY_NAME';
+}
+.tool_bar {
+  background-color: #042345;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1.8vh;
+}
+.icon{
+  width: 5vw;
+  height: 5vh;
+  display: flex;
+  align-items: center;
+  font-size: large;
+  text-decoration: solid;
+  color: white;
+}
+.icon:hover {
+  font-size: xx-large;
+  text-transform: capitalize;
+  text-decoration: underline;
+}
+.icon_img{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.sro{ 
+    background-color: #1c0336;
+    color: white;
+    padding: 2vh;
+    font-size: 1rem;
+    border: none;   
+}
+.space_research {
+    position: relative;
+    display: inline-block;
+    /* display: flex;
+    flex-direction: row; */
+  }
+  .options{
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 15vh;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  .options button {
+    background-color: black;
+    color: white;
+    
+    padding: 1.8vh 1vw;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+
+  }
+.options button:hover {
+  background-color: white;
+  color: black;
+}
+.image{
+    height: 400px;
+    width: 800px;
+    overflow: hidden;
+    margin: auto auto;
+}
+#image_tech{
+    height: 100%;
+    width: 100%;
+    border-radius: 5%;
+}
+.space_research:hover .options {display: block;}
+
+.space_research:hover .sro {background-color: #01040d;
+font-size: 20px;}
+.history button{
+  background-color: #1c0336;
+  color: white;
+  padding: 1rem;
+  font-size: 1rem;
+  border: none;
+}
+.history:hover .hbutton{ background-color: #01040d;
+font-size: 1.25rem;}
+.home button{
+  background-color: #1c0336;
+  color: white;
+  padding: 1rem;
+  font-size: 1rem;
+  border: none;
+}
+.home:hover .hobutton{ background-color: #01040d;
+font-size: 1.25rem;}
+
+       
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            animation: fadeIn 2s ease-in-out;
+        }
+        .button-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 8px;
+            background-color: #3498db;
+            color: #fff;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+        button:hover {
+            background-color: #2980b9;
+            transform: scale(1.05);
+        }
+        .section {
+            margin-bottom: 20px;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            animation: slideIn 1s ease-out;
+        }
+        .section:nth-child(even) {
+            background-color: #eaf6ff;
+        }
+        .section:nth-child(odd) {
+            background-color: #d4edda;
+        }
+        .section h2 {
+            color: #2980b9;
+            animation: colorChange 3s infinite alternate;
+        }
+        .section p, .section ul {
+            line-height: 1.6;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes slideIn {
+            from { transform: translateX(-100%); opacity: 0; }
+            to { transform: translateX(0); opacity: 1; }
+        }
+        @keyframes colorChange {
+            from { color: #2980b9; }
+            to { color: #1abc9c; }
+        }

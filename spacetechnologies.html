@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Technologies</title>
+    <link rel="stylesheet" href="st.css">
+   
+</head>
+<body>
+    <div class="tool_bar">
+        <div class="icon">
+            <img class="icon_img" src="iconimage.jpg" alt="icon">
+            StarSeekers
+        </div>
+        <div class="home"><button class="hobutton" onclick="gotopage('home')">Home</button></div>
+        <div class="history">
+           <button class="hbutton">History</button>
+        </div>
+         <div class="space_research">
+            <button class="sro">Space Research Organisations</button>
+            <div class="options">
+            <button class="isro" onclick="gotopage('isro')"> Indian Space Research Organisation (ISRO)</button>
+            <button class="nasa" onclick="gotopage('nasa')"> National Aeronautics and Space Administration (NASA)</button>
+            <button class="esa" onclick="gotopage('cnsa')">China National Space Administration (CNSA)</button>
+            <button class="cnsa" onclick="gotopage('esa')">European Space Agency (ESA)</button>
+            <button class="roscosmos" onclick="gotopage('roscosmos')">Russian Federal Space Agency (Roscosmos)</button>
+            <button class="Spacex" onclick="gotopage('spacex')"> SpaceX</button>
+            <button class="jaxa" onclick="gotopage('jaxa')">Japan Aerospace Exploration Agency (JAXA)</button>
+            <button class="france" onclick="gotopage('france')">National Centre for Space Studies (France)</button>
+            <button class="asi" onclick=" gotopage('asi')">Italian Space Agency (ASI)</button>
+            <button class="dlr" onclick="gotopage('dlr')">German Aerospace Center (DLR)</button>
+            <button class="korean" onclick="gotopage('kari')">Korea Aerospace Research Institute</button>
+            <button class="canadian" onclick="gotopage('csa')">Canadian Space Agency</button>
+         </div>
+         </div>
+         <div class="space_research">
+            <button class="sro" onclick="gotopage('spacetechnologies')">Space Technologies</button>
+         </div>
+         </div>
+    <h1>Space Technologies</h1>
+    <div class="button-container">
+        <button onclick="changeContent('satellites')">Satellites</button>
+        <button onclick="changeContent('rocket_propulsion')">Rocket Propulsion Systems</button>
+        <button onclick="changeContent('spacecraft')">Spacecraft</button>
+        <button onclick="changeContent('space_stations')">Space Stations</button>
+        <button onclick="changeContent('space_rovers')">Space Rovers</button>
+        <button onclick="changeContent('space_telescopes')">Space Telescopes</button>
+        <button onclick="changeContent('space_suits')">Space Suits</button>
+        <button onclick="changeContent('navigation_systems')">Spacecraft Navigation Systems</button>
+        <button onclick="changeContent('communication_systems')">Communication Systems</button>
+        <button onclick="changeContent('space_sensors')">Space-Based Sensors</button>
+        <button onclick="changeContent('satellite_imagery')">Satellite Imagery</button>
+    </div>
+    <div class="image"><img id="image_tech" src="spacetech/spacetech.jpg" alt="SPACE TECHNOLOGIES"></div>
+    <div id="content" class="section"></div>
+</body>   
+<script src="tech.js"></script>
+</html>
