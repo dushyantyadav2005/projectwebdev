@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="knowrandom.css">
+</head>
+<body>
+    <div class="tool_bar">
+        <div class="icon">
+            <img class="icon_img" src="iconimage.jpg" alt="icon">
+            StarSeekers
+        </div>
+        <div class="home"><button class="hobutton" onclick="gotopage('home')">Home</button></div>
+        <div class="history">
+           <button class="hbutton">History</button>
+        </div>
+         <div class="space_research">
+            <button class="sro">Space Research Organisations</button>
+            <div class="options">
+            <button class="isro" onclick="gotopage('isro')"> Indian Space Research Organisation (ISRO)</button>
+            <button class="nasa" onclick="gotopage('nasa')"> National Aeronautics and Space Administration (NASA)</button>
+            <button class="esa" onclick="gotopage('cnsa')">China National Space Administration (CNSA)</button>
+            <button class="cnsa" onclick="gotopage('esa')">European Space Agency (ESA)</button>
+            <button class="roscosmos" onclick="gotopage('roscosmos')">Russian Federal Space Agency (Roscosmos)</button>
+            <button class="Spacex" onclick="gotopage('spacex')"> SpaceX</button>
+            <button class="jaxa" onclick="gotopage('jaxa')">Japan Aerospace Exploration Agency (JAXA)</button>
+            <button class="france" onclick="gotopage('france')">National Centre for Space Studies (France)</button>
+            <button class="asi" onclick=" gotopage('asi')">Italian Space Agency (ASI)</button>
+            <button class="dlr" onclick="gotopage('dlr')">German Aerospace Center (DLR)</button>
+            <button class="korean" onclick="gotopage('kari')">Korea Aerospace Research Institute</button>
+            <button class="canadian" onclick="gotopage('csa')">Canadian Space Agency</button>
+         </div>
+         </div>
+         <div class="space_research">
+            <button class="sro" onclick="gotopage('spacetechnologies')">Space Technologies</button>
+         </div>
+         </div>
+    <div class="title">Pick Planet To Know About...</div>
+    <div class="bc planets">
+        <button class="choice planetsb" onclick="pickRandomPlanet()">Pick One Planet</button>
+        <button class="choice pclose" onclick="closePlanetInfo()">Close</button>
+    </div>
+    <div class="contentp" id="planet-info" style="display: none;">
+        <img id="planet-image" class="pimage" src="" alt="Planet Image">
+        <div class="planet-profile">
+            <h1 id="planet-name">Earth Planet Profile</h1>
+            <div class="profile-item">
+                <span class="label">Equatorial Diameter:</span>
+                <span class="value" id="equatorial-diameter">12,756 km</span>
+            </div>
+            <div class="profile-item">
+                <span class="label">Polar Diameter:</span>
+                <span class="value" id="polar-diameter">12,714 km</span>
+            </div>
+            <div class="profile-item">
+                <span class="label">Mass:</span>
+                <span class="value" id="mass">5.97 × 10<sup>24</sup> kg</span>
+            </div>
+            <div class="profile-item">
+                <span class="label">Moons:</span>
+                <span class="value" id="moons">1 (The Moon)</span>
+            </div>
+            <div class="profile-item">
+                <span class="label">Orbit Distance:</span>
+                <span class="value" id="orbit-distance">149,598,262 km (1 AU)</span>
+            </div>
+            <div class="profile-item">
+                <span class="label">Orbit Period:</span>
+                <span class="value" id="orbit-period">365.24 days</span>
+            </div>
+            <div class="profile-item">
+                <span class="label">Surface Temperature:</span>
+                <span class="value" id="surface-temperature">-88 to 58°C</span>
+            </div>
+        </div>
+    </div>
+    <div class="title">Pick Star To Know About...</div>
+    <div class="bc start">
+        <button class="choice starsb" onclick="pickRandomStar()">Pick One Star</button>
+        <button class="choice sclose" onclick="closeStarInfo()">Close</button>
+    </div>
+    <div class="content-s" id="star-info" style="display: none;">
+        <img id="star-image" class="pimage" src="" alt="Star Image">
+        <div class="star-profile">
+            <h1 id="star-name">Star Profile</h1>
+            <div class="profile-item">
+                <span class="label">Spectral Type:</span>
+                <span class="value" id="spectral-type">G2V</span>
+            </div>
+            <div class="profile-item">
+                <span class="label">Mass:</span>
+                <span class="value" id="star-mass">1.989 × 10<sup>30</sup> kg</span>
+            </div>
+            <div class="profile-item">
+                <span class="label">Radius:</span>
+                <span class="value" id="star-radius">696,340 km</span>
+            </div>
+            <div class="profile-item">
+                <span class="label">Luminosity:</span>
+                <span class="value" id="star-luminosity">3.828 × 10<sup>26</sup> W</span>
+            </div>
+            <div class="profile-item">
+                <span class="label">Temperature:</span>
+                <span class="value" id="star-temperature">5,778 K</span>
+            </div>
+            <div class="profile-item">
+                <span class="label">Distance:</span>
+                <span class="value" id="star-distance">0 light-years</span>
+            </div>
+        </div>
+    </div>
+    <div class="title">Pick Galaxy To Know About...</div>
+    <div class="bc galaxy">
+        <button class="choice galaxysb" onclick="pickRandomGalaxy()">Pick One Galaxy</button>
+        <button class="choice gclose" onclick="closeGalaxyInfo()">Close</button>
+    </div>
+    <div class="content-g" id="galaxy-info" style="display: none;">
+        <img id="galaxy-image" class="pimage" src="" alt="Galaxy Image">
+        <div class="galaxy-profile">
+            <h1 id="galaxy-name">Galaxy Profile</h1>
+            <div class="profile-item">
+                <span class="label">Type:</span>
+                <span class="value" id="galaxy-type">Spiral</span>
+            </div>
+            <div class="profile-item">
+                <span class="label">Diameter:</span>
+                <span class="value" id="galaxy-diameter">100,000 light-years</span>
+            </div>
+            <div class="profile-item">
+                <span class="label">Number of Stars:</span>
+                <span class="value" id="galaxy-stars">100-400 billion</span>
+            </div>
+            <div class="profile-item">
+                <span class="label">Distance:</span>
+                <span class="value" id="galaxy-distance">2.5 million light-years</span>
+            </div>
+            <div class="profile-item">
+                <span class="label">Mass:</span>
+                <span class="value" id="galaxy-mass">1.5 × 10<sup>12</sup> M<sub>☉</sub></span>
+            </div>
+            <div class="profile-item">
+                <span class="label">Constellation:</span>
+                <span class="value" id="galaxy-constellation">Andromeda</span>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="left_footer">
+        <div class="icon">
+            <img class="icon_img" src="iconimage.jpg" alt="icon">
+            StarSeekers
+        </div>
+        <div class="heading_text">Knowledge Of Space Industry And Space.</div>
+        <div class="text">The space industry covers satellites,
+             exploration, tourism, and infrastructure. Key players 
+             like SpaceX and Blue Origin advance reusable rockets 
+             and small satellites. Major projects include NASA's Artemis 
+             Program. Challenges involve space debris and sustainability. 
+             Opportunities lie in economic growth and technological innovation through 
+             public-private and international collaboration.</div>
+    </div>
+    
+    <div class="avl_mess"><div class="email"> Email id : dyadav15112005@gmail.com</div>
+    <div class="about"><a href="aboutus.html">About us</a></div>
+    <div class="homme"><a href="index.html">Home</a></div>
+    </div>
+    <div class="right_footer">
+        <div class="feedback">
+            Your valuable Feedback... on Email
+
+        </div>
+        <div class="contact">Connect with us...</div>
+          <div class="option_follow"><i class="fa-brands fa-instagram"></i>
+           <a href="https://www.youtube.com/@dushyantyadav9258"><i class="fa-brands fa-youtube"></i></a> 
+           <a href="https://www.linkedin.com/in/dushyant-yadav-a8915b286"><i class="fa-brands fa-linkedin"></i></a> 
+           <a href=""> <i class="fa-brands fa-twitter"></i></a>
+          <a href="dyadav15112005@gmail.com"> <i class="fa-solid fa-envelope"></i></div></a> 
+    </div>
+    </div>
+
+    <script src="random.js"></script>
+</body>
+</html>

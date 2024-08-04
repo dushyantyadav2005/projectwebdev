@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    color: aliceblue;
+    box-sizing: border-box;
+    font-family: 'FAMILY_NAME';
+}
+.tool_bar {
+  background-color: #042345;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1.8vh;
+}
+.icon{
+  width: 5vw;
+  height: 5vh;
+  display: flex;
+  align-items: center;
+  font-size: large;
+  text-decoration: solid;
+  color: white;
+}
+.icon:hover {
+  font-size: xx-large;
+  text-transform: capitalize;
+  text-decoration: underline;
+}
+.icon_img{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.sro{ 
+    background-color: #1c0336;
+    color: white;
+    padding: 2vh;
+    font-size: 1rem;
+    border: none;   
+}
+.space_research {
+    position: relative;
+    display: inline-block;
+    /* display: flex;
+    flex-direction: row; */
+  }
+  .options{
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 15vh;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  .options button {
+    background-color: black;
+    color: white;
+    
+    padding: 1.8vh 1vw;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+
+  }
+.options button:hover {
+  background-color: white;
+  color: black;
+}
+
+.space_research:hover .options {display: block;}
+
+.space_research:hover .sro {background-color: #01040d;
+font-size: 20px;}
+.history button{
+  background-color: #1c0336;
+  color: white;
+  padding: 1rem;
+  font-size: 1rem;
+  border: none;
+}
+.history:hover .hbutton{ background-color: #01040d;
+font-size: 1.25rem;}
+.home button{
+  background-color: #1c0336;
+  color: white;
+  padding: 1rem;
+  font-size: 1rem;
+  border: none;
+}
+.home:hover .hobutton{ background-color: #01040d;
+font-size: 1.25rem;}
+.choice {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    background-color: #3498db;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+.choice:hover {
+    background-color: #2980b9;
+    transform: scale(1.05);
+}
+.bc{
+    width: 100vh;
+    margin:2vh 27vw ;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.title{
+    color: #01040d;
+    font-size: 3rem;
+    width: 50vw;
+    margin: 10vh 27vw;
+}
+.contentp{
+    display: flex;
+    flex-direction: column;
+    margin: auto auto;
+    align-items: center;
+    width: 80vw;
+    overflow: hidden;
+
+}
+.pimage{
+    height: 30vh;
+    width: 20vw;
+    border-radius: 5px;
+    margin: auto auto;
+}
+.palnetcont{
+    color: #01040d;
+    font-size: 2rem;
+    background-color: aqua;
+    border-radius: 4%;
+    margin: auto auto;
+}
+.planet-profile {
+    background: #1e1e1e;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+    display: inline-block;
+    width: 100%;
+    max-width: 600px;
+}
+
+h1 {
+    color: #00bcd4;
+    margin-bottom: 20px;
+}
+
+.profile-item {
+    margin: 10px 0;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 5px;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.profile-item:nth-child(odd) {
+    background-color: #2e2e2e;
+}
+
+.profile-item:nth-child(even) {
+    background-color: #1c1c1c;
+}
+
+.profile-item:hover {
+    background-color: #333;
+}
+
+.label {
+    color: #ff9800;
+    font-weight: bold;
+}
+
+.value {
+    color: #ffffff;
+}
+
+.value sup {
+    font-size: 0.8em;
+}
+
+.content-s, .content-g {
+    display: flex;
+    flex-direction: column;
+    margin: auto auto;
+    align-items: center;
+    width: 80vw;
+    overflow: hidden;
+}
+
+.simage, .gimage {
+    height: 30vh;
+    width: 20vw;
+    border-radius: 5px;
+    margin: auto auto;
+}
+
+.star-profile, .galaxy-profile {
+    background: #1e1e1e;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+    display: inline-block;
+    width: 100%;
+    max-width: 600px;
+}
+
+.star-profile h1, .galaxy-profile h1 {
+    color: #00bcd4;
+    margin-bottom: 20px;
+}
+
+.profile-item {
+    margin: 10px 0;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 5px;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.profile-item:nth-child(odd) {
+    background-color: #2e2e2e;
+}
+
+.profile-item:nth-child(even) {
+    background-color: #1c1c1c;
+}
+
+.profile-item:hover {
+    background-color: #333;
+}
+
+.label {
+    color: #ff9800;
+    font-weight: bold;
+}
+
+.value {
+    color: #ffffff;
+}
+
+.value sup {
+    font-size: 0.8em;
+}
+.footer{
+    background-color: #01040d;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    padding: 100px 100px;
+    gap: 20px;
+  }
+  .left_footer{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 500px;
+  }
+  .heading_text{
+    font-size: 3rem;
+  }
+  .text{
+    color: rgb(80, 80, 92);
+  }
+  .right_footer{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .feedback{
+    font-size: 32px;
+  }
+  .option_follow{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+  .avl_mess{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
