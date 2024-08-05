@@ -1,0 +1,314 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+header.hero {
+  width: 90vw;
+  position: relative;
+  display: flex;
+  margin: auto;
+  align-items: center;
+  padding: 20px;
+  background-color: #f4f4f4;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
+  color: #333;
+}
+
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero-text h1 {
+  margin-bottom: 1.1%;
+}
+
+#full-name {
+  font-size: small;
+  color: #838080;
+  margin-top: 0%;
+  transition: all 2s linear;
+}
+
+body.dark-mode .hero-text h1,
+.hero-text p {
+  color: #ddd;
+}
+
+.history {
+  width: 85vw;
+  margin: auto;
+  margin-top: 15px;
+  background-color: #ffffff;
+}
+
+.hero-text {
+  max-width: 50%;
+}
+
+section {
+  padding: 20px;
+  margin: 10px 0;
+}
+
+.history .era {
+  margin-bottom: 20px;
+}
+
+.history .era h3 {
+  margin: 10px 0;
+  color: #4CAF50;
+}
+
+.history .era ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.history .era ul li {
+  background: #f4f4f4;
+  margin: 5px 0;
+  padding: 10px;
+  border-left: 5px solid #4CAF50;
+  border-radius: 5px;
+  transition: all 0.2s linear;
+}
+
+body.dark-mode .history .era ul li {
+  background: #333;
+  color: #ffffff;
+}
+
+.history .era ul li:hover {
+  transform: scale(1.03);
+  background: #838080;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.history .read-more {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: #4CAF50;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.history .read-more:hover {
+  background: #45a049;
+}
+
+.missions,
+.achievements,
+.future-plans {
+  width: 85vw;
+  margin: auto;
+  margin-top: 15px;
+  position: relative;
+  overflow: hidden;
+}
+
+.missions {
+  background-color: #ffffff;
+}
+
+.achievements {
+  background-color: #ffffff;
+}
+
+.future-plans {
+  background-color: #f9fafb;
+}
+
+.about {
+  background: #f4f4f4;
+  margin: 5px 0;
+  padding: 10px;
+  border-left: 5px solid #4CAF50;
+  border-radius: 5px;
+  transition: all 0.2s linear;
+}
+
+body.dark-mode .about {
+
+  background: #333;
+  color: #ffffff;
+
+}
+
+.cards-wrapper {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  margin: auto;
+  margin-top: 15px;
+  mask-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1) 10%, rgba(0, 0, 0, 1) 90%, rgba(0, 0, 0, 0));
+}
+
+.cards-container {
+  display: flex;
+  gap: 15px;
+  white-space: nowrap;
+}
+
+.cards-container .card {
+  min-width: 250px;
+  height: 300px;
+  background: #ddd;
+  position: relative;
+  padding: 10px;
+  display: flex;
+  border-radius: 7px;
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  transition: transform 0.3s, box-shadow 0.3s;
+  flex-wrap: wrap;
+  align-content: stretch;
+  justify-content: flex-end;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.cards-container .card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.cards-container .card h3,
+.cards-container .card p,
+.cards-container .card a {
+  position: relative;
+  z-index: 1;
+}
+
+.cards-container .card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.cards-container .card:hover::before {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+button#toggle-mode {
+  background: #0073e6;
+  color: white;
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+}
+
+button#toggle-mode:hover {
+  background: #005bb5;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+body.dark-mode header.hero {
+  background-color: #1a1a1a;
+}
+
+body.dark-mode .history {
+  background-color: #1f1f1f;
+}
+
+body.dark-mode .missions {
+  background-color: #1a1a1a;
+}
+
+body.dark-mode .achievements {
+  background-color: #1f1f1f;
+}
+
+body.dark-mode .future-plans {
+  background-color: #1a1a1a;
+}
+
+body.dark-mode .read-more {
+  background: #4CAF50;
+  color: white;
+}
+
+body.dark-mode .read-more:hover {
+  background: #45a049;
+}
+
+body.dark-mode button#toggle-mode {
+  background: #0073e6;
+  color: white;
+}
+
+body.dark-mode button#toggle-mode:hover {
+  background: #005bb5;
+}
+
+/* Keyframes for scrolling animations */
+@keyframes slide-missions-left {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes slide-achievements-right {
+  0% {
+    transform: translateX(-50%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slide-future-plans-left {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.missions .cards-container {
+  animation: slide-missions-left var(--animation-duration) linear infinite;
+}
+
+.achievements .cards-container {
+  animation: slide-achievements-right var(--animation-duration) linear infinite;
+}
+
+.future-plans .cards-container {
+  animation: slide-future-plans-left var(--animation-duration) linear infinite;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .cards-container .card {
+    min-width: 150px;
+  }
+}

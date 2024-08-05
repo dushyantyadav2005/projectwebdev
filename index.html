@@ -1,173 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="stylehome.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Space Program Overview</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    <div class="tool_bar">
-        <div class="icon">
-            <img class="icon_img" src="iconimage.jpg" alt="icon">
-            StarSeekers
-        </div>
-        <div class="home"><button class="hobutton" onclick="gotopage('home')">Home</button></div>
-        <div class="history">
-           <button class="hbutton" onclick="gotopage('knowrendom')">Know Random</button>
-        </div>
-         <div class="space_research">
-            <button class="sro">Space Research Organisations</button>
-            <div class="options">
-            <button class="isro" onclick="gotopage('isro')"> Indian Space Research Organisation (ISRO)</button>
-            <button class="nasa" onclick="gotopage('nasa')"> National Aeronautics and Space Administration (NASA)</button>
-            <button class="esa" onclick="gotopage('cnsa')">China National Space Administration (CNSA)</button>
-            <button class="cnsa" onclick="gotopage('esa')">European Space Agency (ESA)</button>
-            <button class="roscosmos" onclick="gotopage('roscosmos')">Russian Federal Space Agency (Roscosmos)</button>
-            <button class="Spacex" onclick="gotopage('spacex')"> SpaceX</button>
-            <button class="jaxa" onclick="gotopage('jaxa')">Japan Aerospace Exploration Agency (JAXA)</button>
-            <button class="france" onclick="gotopage('france')">National Centre for Space Studies (France)</button>
-            <button class="asi" onclick=" gotopage('asi')">Italian Space Agency (ASI)</button>
-            <button class="dlr" onclick="gotopage('dlr')">German Aerospace Center (DLR)</button>
-            <button class="korean" onclick="gotopage('kari')">Korea Aerospace Research Institute</button>
-            <button class="canadian" onclick="gotopage('csa')">Canadian Space Agency</button>
-         </div>
-         </div>
-         <div class="space_research">
-            <button class="sro" onclick="gotopage('spacetechnologies')">Space Technologies</button>
-         </div>
-         </div>
+  <button id="toggle-mode">Switch to Dark Mode</button>
+  <header class="hero">
+    <div class="hero-text">
+      <h1 id="short-name">NASA</h1>
+      <p id="full-name">National Aeronautics and Space Administration</p>
+      <p id="motive">"To explore space for the benefit of humanity"</p>
     </div>
-    <div class="main">
-        <div class="main1">
-            <div class="textheading">
-            <div id="heading_main1">SPACE</div>
-            <div id="defination">Space is the infinite canvas of the universe, where stars, planets, and galaxies paint a breathtaking picture of cosmic wonder.</div>
-            </div>
-        </div>
+    <div class="hero-logo">
+      <img src="images/NASA-removebg-preview.png" alt="Space Program Logo" id="logo">
+    </div>
+  </header>
 
-        <div class="main3">
-            <div class="text1">
-                <button id="planets" onclick="changingdisplay('Planets')">Planets</button>
-                <button id="solar" onclick="changingdisplay('solar')">Solar system</button>
-                <button id="glaxy" onclick="changingdisplay('galaxy')">Galaxy</button>
-                <button id="universe" onclick="changingdisplay('universe')">universe</button>
-            </div>
-            <div class="iptions">
-                <div class="heading">A Journey Through the Space: From Planets to Galaxies</div>
-                <div class="data">
-            <div class="image_spapa">
-                <img class="parts" src="spaceparts/Planets.jpg" alt="image">
-            </div>
-            <div class="text_parts">
-                <div class="about_parts">
-                    <h2>1. Definition and Classification</h2>
-                    <p>Planets are large celestial bodies that orbit a star. In our Solar System, the primary star is the Sun. Planets are classified into two main types:</p>
-                    <ul>
-                        <li><strong>Terrestrial Planets</strong>: These are rocky planets with solid surfaces. In our Solar System, they include Mercury, Venus, Earth, and Mars. They generally have higher densities and are closer to the Sun.</li>
-                        <li><strong>Gas Giants and Ice Giants</strong>: 
-                            <ul>
-                                <li><strong>Gas Giants</strong>: Jupiter and Saturn are the gas giants. They are predominantly composed of hydrogen and helium and have thick atmospheres with deep gaseous layers.</li>
-                                <li><strong>Ice Giants</strong>: Uranus and Neptune are ice giants, with a composition that includes a larger proportion of "ices" such as water, ammonia, and methane, compared to hydrogen and helium.</li>
-                            </ul>
-                        </li>
-                    </ul>
-                    <h2>2. Orbital Characteristics</h2>
-                    <p>Planets orbit a star in an elliptical path. The shape of their orbits can be slightly eccentric (oval-shaped) but are generally close to circular. Key orbital characteristics include:</p>
-                    <ul>
-                        <li><strong>Orbital Period</strong>: The time it takes for a planet to complete one orbit around the star.</li>
-                        <li><strong>Orbital Distance</strong>: The average distance from the planet to the star, known as the semi-major axis.</li>
-                        <li><strong>Eccentricity</strong>: A measure of how elongated the orbit is.</li>
-                    </ul>
-                    <h2>3. Physical Properties</h2>
-                    <p>Planets exhibit diverse physical characteristics, such as:</p>
-                    <ul>
-                        <li><strong>Size and Mass</strong>: Planets vary widely in size and mass. For example, Jupiter is the largest planet in our Solar System, while Mercury is the smallest.</li>
-                        <li><strong>Surface and Atmosphere</strong>: Surface features can range from rocky terrain and mountains to icy surfaces and deep oceans. Atmospheres vary in composition and density, affecting weather and climate.</li>
-                    </ul>
-                    <h2>4. Planetary Systems</h2>
-                    <p>A planetary system consists of a star and the planets and other objects that orbit it. The study of these systems extends beyond our Solar System to include exoplanets (planets orbiting stars other than the Sun).</p>
-                    <ul>
-                        <li><strong>Exoplanets</strong>: Detected using methods such as the transit method (observing dimming of a star as a planet passes in front of it) or radial velocity (measuring star's wobble due to gravitational influence of a planet).</li>
-                    </ul>
-                    <h2>5. Formation and Evolution</h2>
-                    <p>Planets form from the protoplanetary disk of gas and dust surrounding a young star. Over time, particles collide and coalesce to form planetesimals, which then accrete to form planets.</p>
-                    <ul>
-                        <li><strong>Planetary Differentiation</strong>: During formation, heavier elements sink towards the center, forming a core, while lighter materials form the mantle and crust.</li>
-                    </ul>
-                    <h2>6. Habitability</h2>
-                    <p>The potential for a planet to support life depends on various factors including:</p>
-                    <ul>
-                        <li><strong>Location in the Habitable Zone</strong>: The region around a star where conditions might allow liquid water to exist.</li>
-                        <li><strong>Atmospheric Conditions</strong>: A stable atmosphere that can regulate temperature and protect against harmful radiation.</li>
-                    </ul>
-                </div>
-            </div>
-            </div>
-        </div>
+  <section class="history">
+    <h2>History</h2>
+    <div class="history-content">
+      <div class="era">
+        <h3>Formation and Early Years</h3>
+        <ul>
+          <li><strong>1958:</strong> NASA was established on July 29, 1958, in response to the Soviet Union's successful
+            launch of Sputnik. The agency absorbed NACA (National Advisory Committee for Aeronautics) and other related
+            organizations.</li>
+          <li><strong>1961:</strong> President John F. Kennedy set the goal of landing a man on the Moon by the end of
+            the 1960s, spurring the Apollo program.</li>
+        </ul>
+      </div>
+      <div class="era">
+        <h3>The Space Race and Moon Landing</h3>
+        <ul>
+          <li><strong>1961:</strong> Alan Shepard became the first American in space with a suborbital flight on
+            Mercury-Redstone 3.</li>
+          <li><strong>1962:</strong> John Glenn orbited the Earth, marking a significant milestone in the Mercury
+            program.</li>
+          <li><strong>1969:</strong> Apollo 11 landed the first humans on the Moon. Neil Armstrong and Buzz Aldrin
+            walked on the lunar surface on July 20, 1969, while Michael Collins orbited above.</li>
+        </ul>
+      </div>
+      <div class="era">
+        <h3>Post-Apollo and Shuttle Era</h3>
+        <ul>
+          <li><strong>1970s:</strong> NASA continued lunar exploration with Apollos 12-17, and launched Skylab,
+            America's first space station.</li>
+          <li><strong>1981:</strong> The Space Shuttle program began with the launch of Columbia (STS-1). The reusable
+            shuttle became central to NASA's missions, including satellite deployment, scientific research, and
+            construction of the International Space Station (ISS).</li>
+        </ul>
+      </div>
+      <div class="era">
+        <h3>Tragedies and Triumphs</h3>
+        <ul>
+          <li><strong>1986:</strong> The Space Shuttle Challenger disaster resulted in the loss of seven astronauts,
+            prompting a reevaluation of the shuttle program.</li>
+          <li><strong>2003:</strong> The Space Shuttle Columbia disintegrated upon re-entry, leading to another tragic
+            loss and further reforms in NASA’s safety protocols.</li>
+        </ul>
+      </div>
+      <div class="era">
+        <h3>International Collaboration and Modern Era</h3>
+        <ul>
+          <li><strong>1990s-2000s:</strong> NASA played a crucial role in the construction and operation of the ISS, a
+            joint venture with international space agencies.</li>
+          <li><strong>2011:</strong> The Space Shuttle program ended with the final flight of Atlantis (STS-135).</li>
+          <li><strong>2010s-Present:</strong> NASA shifted focus to deep space exploration, launching the Artemis
+            program to return humans to the Moon and eventually to Mars. Collaborations with private companies like
+            SpaceX have revolutionized space travel, with notable achievements including the Commercial Crew Program and
+            the Mars Perseverance rover mission in 2020.</li>
+        </ul>
+      </div>
     </div>
+    <a href="history.html" class="read-more">Read More</a>
+  </section>
+
+  <section class="missions">
+    <h2>Missions</h2>
+    <p class="about">
+      As one of the leading space organizations, NASA has undertaken numerous missions with diverse objectives. These
+      missions range from flybys to landings, each contributing significantly to our understanding of the universe.
+      NASA's endeavors have not only advanced scientific knowledge but have also had a profound impact on modern life.
+      Many technologies we use today, such as satellite communications, weather forecasting, and even medical
+      advancements, can trace their origins to NASA's innovative research and space missions. The organization's
+      commitment to exploration has led to groundbreaking discoveries about our solar system and beyond. Some notable
+      missions include the Mars Rover expeditions, which have provided invaluable data about the Martian surface, and
+      the Voyager probes, which continue to send information from the far reaches of our solar system. These missions
+      highlight NASA's pivotal role in pushing the boundaries of human knowledge and technological capability.</p>
+    <div class="cards-wrapper">
+      <div class="cards-container">
+        <!-- Cards will be inserted by js -->
+      </div>
+    </div>
+  </section>
+
+  <section class="achievements">
+    <h2>Achievements</h2>
+    <p class="about">Here are some examples of achievements:NASA, as one of the leading space organizations, has
+      achieved numerous milestones that have significantly advanced our understanding of space and technology. One of
+      NASA's most notable achievements is the Apollo moon landing in 1969, which marked humanity's first steps on the
+      lunar surface and provided invaluable data about our closest celestial neighbor. The development of the Space
+      Shuttle program revolutionized space travel, enabling reusable spacecraft and paving the way for the construction
+      of the International Space Station (ISS). The Hubble Space Telescope has offered unprecedented views of distant
+      galaxies, stars, and planets, vastly expanding our knowledge of the universe. Mars exploration missions, such as
+      the Mars Rover expeditions, have revealed the planet's geological history and potential for past life.
+      Additionally, NASA's Earth science missions have enhanced our understanding of climate change, weather patterns,
+      and natural disasters. These achievements underscore NASA's role in pushing the frontiers of science and
+      technology.
+    <div class="cards-wrapper">
+      <div class="cards-container">
+        <!-- Cards will be inserted by js -->
+      </div>
+    </div>
+  </section>
+
+  <section class="future-plans">
+    <h2>Future Plans</h2>
+    <p class="about">NASA's future plans are as ambitious and visionary as its past achievements. One of the most
+      significant projects
+      on the horizon is the Artemis program, which aims to return humans to the Moon by 2024 and establish a sustainable
+      human presence by the end of the decade. This program will not only pave the way for lunar exploration but also
+      serve as a stepping stone for future missions to Mars. Artemis includes the construction of the Lunar Gateway, a
+      space station that will orbit the Moon and facilitate deep space exploration.
+
+      Another groundbreaking initiative is the Mars Sample Return mission, in collaboration with the European Space
+      Agency (ESA). This mission will collect samples from the Martian surface and return them to Earth for detailed
+      analysis, potentially providing clues about the planet's past habitability and the possibility of life beyond
+      Earth.
+
+      NASA is also heavily invested in developing new technologies for space exploration. The agency is working on the
+      Space Launch System (SLS), the most powerful rocket ever built, designed to carry astronauts and cargo to deep
+      space destinations. Additionally, the Orion spacecraft is being developed to transport humans farther into space
+      than ever before.
+
+      On the forefront of science and technology, NASA plans to launch the James Webb Space Telescope, which will be the
+      premier observatory of the next decade. This telescope is expected to make significant discoveries about the
+      origins of the universe, the formation of stars and planets, and the potential for life in other solar systems.
+
+      Furthermore, NASA continues to prioritize Earth science missions to monitor and understand our home planet’s
+      climate and environmental changes. Through these and other innovative projects, NASA is poised to continue leading
+      humanity’s exploration of space and expanding our understanding of the cosmos.</p>
+    <div class="cards-wrapper">
+      <div class="cards-container"></div>
+        <!-- Cards will be inserted by js-->
+      </div>
+    </div>
+  </section> 
 
 
-        <div class="main2">
-            <div class="imp">
-                <div class="item">
-                    <img class="imagenew" src="updatesimage/iteam1.webp" alt="image1">
-                    <div class="textnew">
-                        <div class="heading_main2">Search for Life</div>
-                    Can We Find Life? <a href="https://science.nasa.gov/exoplanets/can-we-find-life/">The James Webb Space Telescope, launched in 2021, could get the first glimpses!!</a></div>
-                </div>
-                <div class="item">
-                    <img class="imagenew" src="updatesimage/alien.jpg" alt="image1">
-                    <div class="textnew">
-                        <div class="heading_main2">ALIENS</div>
-                        Do Aliens Exist? <a href="https://www.youtube.com/watch?v=iWrTGAReUdE">Extraterrestrial life has never been discovered, but that doesn’t mean it doesn’t exist.</a></div>
-                </div>
-                <div class="item">
-                    <img class="imagenew" src="updatesimage/iteam3.jpeg" alt="image1">
-                    <div class="textnew">
-                        <div class="heading_main2">BLACK HOLES</div>
-                        What Are Black Holes? <a href="https://www.nasa.gov/universe/what-are-black-holes/">black holes, the mysterious objects with such strong gravity that nothing can escape them.</a></div>
-                </div>
-            </div>
-        </div>
-        
-        
-        
-    </div>
-    <div class="footer">
-        <div class="left_footer">
-        <div class="icon">
-            <img class="icon_img" src="iconimage.jpg" alt="icon">
-            StarSeekers
-        </div>
-        <div class="heading_text">Knowledge Of Space Industry And Space.</div>
-        <div class="text">The space industry covers satellites,
-             exploration, tourism, and infrastructure. Key players 
-             like SpaceX and Blue Origin advance reusable rockets 
-             and small satellites. Major projects include NASA's Artemis 
-             Program. Challenges involve space debris and sustainability. 
-             Opportunities lie in economic growth and technological innovation through 
-             public-private and international collaboration.</div>
-    </div>
-    
-    <div class="avl_mess"><div class="email"> Email id : dyadav15112005@gmail.com</div>
-    <div class="about"><a href="aboutus.html">About us</a></div>
-    <div class="homme"><a href="index.html">Home</a></div>
-    </div>
-    <div class="right_footer">
-        <div class="feedback">
-            Your valuable Feedback... on Email
-
-        </div>
-        <div class="contact">Connect with us...</div>
-          <div class="option_follow"><i class="fa-brands fa-instagram"></i>
-           <a href="https://www.youtube.com/@dushyantyadav9258"><i class="fa-brands fa-youtube"></i></a> 
-           <a href="https://www.linkedin.com/in/dushyant-yadav-a8915b286"><i class="fa-brands fa-linkedin"></i></a> 
-           <a href=""> <i class="fa-brands fa-twitter"></i></a>
-          <a href="dyadav15112005@gmail.com"> <i class="fa-solid fa-envelope"></i></div></a> 
-    </div>
-    </div>
+  <script src="script.js"></script>
 </body>
-<script src="sp.js"></script>
+
 </html>
