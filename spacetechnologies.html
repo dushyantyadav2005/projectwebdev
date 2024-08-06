@@ -15,8 +15,8 @@
         </div>
         <div class="home"><button class="hobutton" onclick="gotopage('home')">Home</button></div>
         <div class="history">
-            <button class="hbutton" onclick="gotopage('knowrendom')">Know Random</button>
-         </div>
+           <button class="hbutton" onclick="gotopage('knowrendom')">Know Random</button>
+        </div>
          <div class="space_research">
             <button class="sro">Space Research Organisations</button>
             <div class="options">
@@ -37,8 +37,29 @@
          <div class="space_research">
             <button class="sro" onclick="gotopage('spacetechnologies')">Space Technologies</button>
          </div>
+         
+
+
          </div>
-    <h1>Space Technologies</h1>
+    
+    <div class="heading">SPACE TECHNOLOGIES</div>
+    
+    
+    <div class="image">
+        <img id="image_tech" src="spaceparts/spacetech.jpeg" alt="SPACE TECHNOLOGIES" style="color: black;" style="font-size: 3rem;">
+        <div id="content" class="section">
+            <h2>Space Technology</h2>
+<p>Space technology encompasses a range of technologies designed to explore and utilize space. These technologies have profound implications for our understanding of the universe and the advancement of human capabilities. Here are some key aspects of space technology:</p>
+<ul>
+    <li><strong>Rocket Propulsion Systems:</strong> The engines that propel spacecraft into space. This includes chemical rockets, like those used in SpaceX’s Falcon 9, and emerging technologies such as ion propulsion systems for deep space exploration.</li>
+    <li><strong>Spacecraft:</strong> Vehicles designed to travel in outer space. This category includes satellites, space probes, and crewed spacecraft such as the International Space Station (ISS) and SpaceX’s Crew Dragon.</li>
+    <li><strong>Space Stations:</strong> Habitats in orbit around Earth where astronauts can live and work in space for extended periods. The ISS is the most notable example, serving as a platform for scientific research and international cooperation.</li>
+    
+    
+</ul>
+<p>Advancements in space technology continue to drive scientific discovery and technological innovation, shaping our understanding of the cosmos and expanding the frontiers of human exploration.</p>
+
+        </div></div>
     <div class="button-container">
         <button onclick="changeContent('satellites')">Satellites</button>
         <button onclick="changeContent('rocket_propulsion')">Rocket Propulsion Systems</button>
@@ -49,11 +70,9 @@
         <button onclick="changeContent('space_suits')">Space Suits</button>
         <button onclick="changeContent('navigation_systems')">Spacecraft Navigation Systems</button>
         <button onclick="changeContent('communication_systems')">Communication Systems</button>
-        <button onclick="changeContent('space_sensors')">Space-Based Sensors</button>
         <button onclick="changeContent('satellite_imagery')">Satellite Imagery</button>
     </div>
-    <div class="image"><img id="image_tech" src="spacetech/spacetech.jpg" alt="SPACE TECHNOLOGIES"></div>
-    <div id="content" class="section"></div>
+    
 </body>   
 <script src="tech.js"></script>
 </html>

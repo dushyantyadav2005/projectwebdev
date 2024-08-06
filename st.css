@@ -1,162 +1,214 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
 * {
     padding: 0;
     margin: 0;
-    /* color: aliceblue; */
+    color: aliceblue;
     box-sizing: border-box;
-    font-family: 'FAMILY_NAME';
+    font-family: 'Roboto Condensed', sans-serif;
 }
+
 .tool_bar {
-  background-color: #042345;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 1.8vh;
+    background-color: #042345;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1.8vh;
 }
-.icon{
-  width: 5vw;
-  height: 5vh;
-  display: flex;
-  align-items: center;
-  font-size: large;
-  text-decoration: solid;
-  color: white;
+
+.icon {
+    width: 5vw;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    font-size: large;
+    color: white;
 }
+
 .icon:hover {
-  font-size: xx-large;
-  text-transform: capitalize;
-  text-decoration: underline;
+    text-transform: capitalize;
+    text-decoration: underline;
 }
-.icon_img{
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
+
+.icon_img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
 }
-.sro{ 
-    background-color: #1c0336;
+
+.sro { 
+    background-color: #042345;
     color: white;
     padding: 2vh;
     font-size: 1rem;
     border: none;   
 }
+
 .space_research {
     position: relative;
     display: inline-block;
-    /* display: flex;
-    flex-direction: row; */
-  }
-  .options{
+}
+
+.options {
     display: none;
     position: absolute;
     background-color: #f1f1f1;
     min-width: 15vh;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
-  }
-  .options button {
+}
+
+.options button {
     background-color: black;
     color: white;
-    
     padding: 1.8vh 1vw;
     text-decoration: none;
     display: block;
     width: 100%;
+}
 
-  }
 .options button:hover {
-  background-color: white;
-  color: black;
+    background-color: white;
+    color: black;
 }
-.image{
-    height: 400px;
-    width: 800px;
-    overflow: hidden;
-    margin: auto auto;
+
+.space_research:hover .options { 
+    display: block; 
 }
-#image_tech{
+
+.space_research:hover .sro { 
+    background-color: #01040d; 
+    font-size: 20px; 
+}
+
+.history button {
+    background-color: #042345;
+    color: white;
+    padding: 1rem;
+    font-size: 1rem;
+    border: none;
+}
+
+.history:hover .hbutton { 
+    background-color: #01040d; 
+    font-size: 1.25rem; 
+}
+
+.home button {
+    background-color: #042345;
+    color: white;
+    padding: 1rem;
+    font-size: 1rem;
+    border: none;
+}
+
+.home:hover .hobutton { 
+    background-color: #01040d; 
+    font-size: 1.25rem; 
+}
+
+.main {
+    width: 98.8vw;
     height: 100%;
-    width: 100%;
-    border-radius: 5%;
+    background-color: #01040d;
 }
-.space_research:hover .options {display: block;}
 
-.space_research:hover .sro {background-color: #01040d;
-font-size: 20px;}
-.history button{
-  background-color: #1c0336;
-  color: white;
-  padding: 1rem;
-  font-size: 1rem;
-  border: none;
+.heading {
+    font-size: 4rem;
+    text-align: center;
+    padding: 2rem;
+    color: #fff; /* Changed to white for contrast */
 }
-.history:hover .hbutton{ background-color: #01040d;
-font-size: 1.25rem;}
-.home button{
-  background-color: #1c0336;
-  color: white;
-  padding: 1rem;
-  font-size: 1rem;
-  border: none;
-}
-.home:hover .hobutton{ background-color: #01040d;
-font-size: 1.25rem;}
 
-       
-        h1 {
-            color: #2c3e50;
-            text-align: center;
-            animation: fadeIn 2s ease-in-out;
-        }
-        .button-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 10px;
-            margin-bottom: 20px;
-        }
-        button {
-            padding: 10px 20px;
-            font-size: 16px;
-            border: none;
-            border-radius: 8px;
-            background-color: #3498db;
-            color: #fff;
-            cursor: pointer;
-            transition: background-color 0.3s, transform 0.2s;
-        }
-        button:hover {
-            background-color: #2980b9;
-            transform: scale(1.05);
-        }
-        .section {
-            margin-bottom: 20px;
-            padding: 15px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            animation: slideIn 1s ease-out;
-        }
-        .section:nth-child(even) {
-            background-color: #eaf6ff;
-        }
-        .section:nth-child(odd) {
-            background-color: #d4edda;
-        }
-        .section h2 {
-            color: #2980b9;
-            animation: colorChange 3s infinite alternate;
-        }
-        .section p, .section ul {
-            line-height: 1.6;
-        }
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
-        }
-        @keyframes slideIn {
-            from { transform: translateX(-100%); opacity: 0; }
-            to { transform: translateX(0); opacity: 1; }
-        }
-        @keyframes colorChange {
-            from { color: #2980b9; }
-            to { color: #1abc9c; }
-        }
+.image {
+    width: 80vw;
+    height: 80vh;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    gap: 5vw;
+    
+}
+
+#image_tech {
+    height: 97%;
+    width: 45%;
+    border-radius: 8px;
+    
+}
+
+.button-container {
+    display: grid;
+    margin: 3vh;
+    grid-template-columns: repeat(5, 1fr); /* 5 equal-width columns */
+    grid-template-rows: repeat(2, auto); /* 2 rows */
+    gap: 10px; /* Space between grid items */
+    justify-content: center; /* Center the grid horizontally */
+    margin-bottom: 20px; /* Space below the grid */
+}
+
+.button-container button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    background-color: #3498db; /* Button background color */
+    color: #fff; /* Text color for buttons */
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #2980b9; /* Button hover color */
+    transform: scale(1.05);
+}
+
+.section {
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: slideIn 1s ease-out;
+}
+
+.section:nth-child(even) {
+    background-color: #eaf6ff; /* Light blue for even sections */
+}
+
+.section:nth-child(odd) {
+    background-color: #d4edda; /* Light green for odd sections */
+}
+
+
+.section p, .section ul,.section h2,.section p,.section li,.section li strong {
+    line-height: 1.6;
+    color:black;
+}
+.section {
+  margin-bottom: 20px;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  animation: slideIn 1s ease-out;
+  text-align: center; /* Center-aligns text and inline elements */
+}
+
+.section li {
+  padding-bottom: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  list-style-position: inside; /* Ensures list items are properly indented */
+  display: inline-block; /* Makes each list item an inline block for horizontal centering */
+  text-align: left; /* Align text inside the list item to the left */
+}
+
+.section ul {
+  list-style-type: disc; /* Adds bullet points to the list items */
+  padding-left: 0; /* Removes default padding for the list */
+  margin: 0; /* Removes default margin for the list */
+  display: flex; /* Use flexbox to center-align list items */
+  flex-direction: column; /* Aligns items vertically */
+  align-items: center; /* Center-aligns list items horizontally */
+}
+
+

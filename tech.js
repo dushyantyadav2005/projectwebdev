@@ -2,6 +2,7 @@ function changeContent(type) {
     let content = '';
     const imge=document.getElementById('image_tech');
     imge.src='spacetech/'+type+'.jpg'
+   
     switch(type) {
         case 'satellites':
             content = `
@@ -165,3 +166,4 @@ function gotopage(k)
         window.location.href = k+'.html';
     }
 }
+

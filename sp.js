@@ -205,3 +205,44 @@ function gotopage(k)
         window.location.href = k+'.html';
     }
 }
+
+function openPopup() {
+    document.getElementById('loginPopup').style.display = 'flex';
+}
+
+function closePopup() {
+    document.getElementById('loginPopup').style.display = 'none';
+}
+
+document.querySelector('.login').addEventListener('click', openPopup);
+
+document.getElementById('loginForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent the default form submission
+    
+    const username = document.getElementById('username').value;
+    const password = document.getElementById('password').value;
+    
+    // Simulate form submission
+    console.log('Username:', username);
+    console.log('Password:', password);
+    
+    // Hide popup after form submission
+    closePopup();
+    
+    // Here you would send the data to your server
+    // For example, using fetch API:
+    fetch('/login', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ username, password })
+    })
+    .then(response => response.json())
+    .then(data => {
+        console.log('Success:', data);
+    })
+    .catch((error) => {
+        console.error('Error:', error);
+    });
+});
