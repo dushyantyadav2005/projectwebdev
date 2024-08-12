@@ -202,7 +202,8 @@ function gotopage(k)
         window.location.href = 'index.html';
     }
     else{
-        window.location.href = k+'.html';
+        // const path = 'Space programs of Country/${k}';
+        window.location.href ='Space_programs_of_Country/'+k+`/${k}.html`;
     }
 }
 
